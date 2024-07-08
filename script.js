@@ -1,5 +1,5 @@
 //global vars
-let purchasePrice, sellingPrice, numShares;
+let purchasePrice, sellingPrice, numShares, earningsVal;
 let purchasePriceEl, sellingPriceEl, numSharesEl, earningEl, initialInvestmentEl;
 
 //calculate the earnings of an investment
@@ -9,7 +9,7 @@ function calculateEarnings(){
     const sellingPrice = sellingPriceEl.value;
     const numShares = numSharesEl.value;
 
-    const earningsVal = ( (sellingPrice - purchasePrice)*numShares ).toFixed(2);
+    earningsVal = ( (sellingPrice - purchasePrice)*numShares ).toFixed(2);
     earningEl.innerHTML = "$ " + earningsVal;
 
     if (earningsVal < 0){
