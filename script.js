@@ -5,21 +5,23 @@ let purchasePriceEl, sellingPriceEl, numSharesEl, earningEl, initialInvestmentEl
 //calculate the earnings of an investment
 function calculateEarnings(){
     //grab users input
-    const purchasePrice = purchasePriceEl.value;
-    const sellingPrice = sellingPriceEl.value;
-    const numShares = numSharesEl.value;
+    const purchasePrice = (purchasePriceEl.value);
+    const sellingPrice = (sellingPriceEl.value);
+    const numShares = (numSharesEl.value);
 
     earningsVal = ( (sellingPrice - purchasePrice)*numShares ).toFixed(2);
-    earningEl.innerHTML = "$ " + earningsVal;
+    earningEl.innerHTML = "$ " + parseFloat(earningsVal).toLocaleString();
 
     if (earningsVal < 0){
-        //loss -> make text red
+        //loss -> red text
         earningEl.style.color = "#da2c38";
     } else if (earningsVal > 0) {
-        //profit -> make text green
+        //profit -> green text
         earningEl.style.color = "#38b000";
+    } else{ //no earning -> black text
+        earningEl.style.color = "30362F";
     }
-    //no earning is just black
+    
 }
 
 //compute the number of shares based on purchase price and initial investment
