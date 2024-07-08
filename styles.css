@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    color: #30362F;
+}
+
+h3{
+    color: #30362F;
+}
+
+.container {
+    background-color: #fdd85d;
+    border: 3px solid #30362F;
+    border-radius: 25px;
+    width: 500px;
+    height: auto;
+
+    /* Center div */
+    margin: auto; 
+
+    /* Center all of its children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.purchase-price-container, .selling-price-container, .number-of-shares-container, .earnings-container{
+    background-color: #fffdf7;
+    border: 3px solid #30362F;
+    border-radius: 10px;
+    text-align: center;
+
+    width: 375px;
+    height: auto;
+
+    padding-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+input[type=text], input[type=number]{
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input[type=text]::placeholder, input[type=number]::placeholder{
+    color: rgb(97, 95, 95);
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: #5bc0eb;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+#earnings{
+    font-weight: bold;
+}

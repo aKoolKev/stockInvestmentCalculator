@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Stock Investment Earnings Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Stock Investment Earnings Calculator</h1>
+        <div class="container">
+            <div class="purchase-price-container">
+                <h3>Purchase Price</h3>
+                <input type="text" placeholder="Enter Purchase Price $" id="purchase-price"/>
+            </div>
+    
+            <div class="selling-price-container">
+                <h3>Selling Price</h3>
+                <input type="text" placeholder="Enter Selling Price $" id="selling-price"/>
+            </div>
+    
+            <div class="number-of-shares-container">
+                <h3>Number of Shares</h3>
+                
+                <p>Enter number of shares</p>
+                <input type="number" placeholder="0" id="number-of-shares">
+                <button id="number-share-reset-button">Clear</button>
+    
+                <p>Or calculate one!</p>
+                <input type="text" placeholder="Enter initial investment $" id="initial-investment">
+                <button id="calculate-number-shares-button">Calculate!</button>
+            </div>
+    
+            <div class="earnings-container">
+                <h3>Earnings</h3>
+                <span id="earnings">$ 0</span>
+            </div>
+    
+
+        </div>
+    </body>
+</html>
