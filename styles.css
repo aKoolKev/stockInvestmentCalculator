@@ -9,6 +9,12 @@ h3{
     color: #30362F;
 }
 
+.credit{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
 .container {
     background-color: #fdd85d;
     border: 3px solid #30362F;
