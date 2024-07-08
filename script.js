@@ -28,6 +28,9 @@ function getNumShares(){
     const purchasePrice = purchasePriceEl.value;
 
     numSharesEl.value = Math.floor(initialInvestment/purchasePrice);
+
+    //"change" cannot listen to manual manipulation of value
+    calculateEarnings();
 }
 
 //clear the number of shares number input field
